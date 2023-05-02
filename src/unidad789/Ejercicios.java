@@ -22,3 +22,32 @@ public class Ejercicios {
     }
 }
 
+//Crea un array unidimensional de Strings y recórrelo, mostrando únicamente sus valores.
+
+ class ArrayUnidimensional {
+    public static void main(String[] args) {
+        String[] miArray = {"uno", "dos", "tres", "cuatro"};
+
+        for (String elemento : miArray) {
+            System.out.println(elemento);
+        }
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        int[][] miArray = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+
+        // Recorremos el array con dos bucles for anidados
+        for (int i = 0; i < miArray.length; i++) {
+            for (int j = 0; j < miArray[i].length; j++) {
+                System.out.println("Valor en [" + i + "][" + j + "]: " + miArray[i][j]);
+            }
+        }
+    }
+}
+
+
+
+
+
